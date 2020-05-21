@@ -1,0 +1,6 @@
+open powershell and type "ls"
+when the list of directories populates, look for "djangogirls"
+type "cd .\djangogirls\"
+type ls again and it should populate the files in the djangogirls folder. Look to see the myvenv file.
+type "myvenv\Scripts\activate"
+now you should see "(myvenv)"
