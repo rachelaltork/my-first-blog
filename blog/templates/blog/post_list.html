@@ -1,22 +1,170 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
+<head>
+	<title>first page and explanations
+<!-- 		this is what will be the text that appears on the tab at the top of the browser and will also be the title that is clickable when the page shows up on a search engine. as long as you tag it as "title" then it wont appear in the page itself. This is the intended purpose of the head. it is meant as a space for title and maybe other stuff i havent learned. However if you type text in the head without a "title" tag, it WILL show up in the page and be undecipherable from the "body"
+ -->	</title>
+</head>
+<body>
+	<h1>Understanding an <em>html Page</em></h1>
+	<h2>Starting the html file</h2>
+		<ol>
+			<li>First thing to do is to save the file with a filename that literally says .html which sets it up to be read by the browser as an html file.</li>
+			<li>After saving it as .html, you can type your first line, which will just be "html" then tab. This sets up the html element. this is the structure for the entire code you write for the page. </li>
+		</ol>
+	<h2> In the <em>HEAD</em> you write all that will not be seen by the user. </h2>
+	<ul>
+		<li>Note that anything typed will actually be visualized if you dont give the correct tags. So, for instance, the head is where you put the <em>title tag</em></li>
+	</ul>
+		<ul>
+			<li>In the <em>TITLE</em>, you write what will tag the page in the search engine.</li>
+		</ul>
+	<h2>In the <em>BODY</em> you write your text. Each tag you give the text you write in the body will set up how it gets positioned on the page.
+	</h2>
+		<h3>Now I will list the types of tags you can use in the body of your html file.</h3>
+		<ol>
+			<li>to make the text <strong>bold</strong>, make a strong tag		
+			</li>
+			<li>to make the text <em>italicized</em>, make an em tag			
+			</li>
+			<li>to make a <strong>new line</strong> within a block of text, use a p tag			
+			</li>
+			<li>the <strong>heading tags</strong> will look as follows: <h1>h1 tags</h1> <h2>h2 tags </h2> <h3>h3 tags </h3>  <h6>h6 tags </h6>			
+			</li>
+			<li>to make a <strong>numbered list</strong>, use an (ordered list) <strong>li tag</strong>			
+			</li>
+			<li>to make a <strong>bulleted list</strong>, use an (un-orderd list) <strong>ul tag</strong>		
+			</li>
+			<li>to post an image, you use a <em>self-closing tag</em> called "img". This means that all the code you input for the image is between the "<" and ">". 
+			</li>
+				<ul>
+					<li>type img and tab</li>
+					<li>or alterernatively type "<" then "img" type a space and the word <strong>src=</strong> next to img. this is the source tag</li>
+					<li> next to the word "src=" paste the link for the image in quotation marks and then close the tag. <img src="img.jpg"><p><img src="https://external-preview.redd.it/HJq2wNmMn8_6JcjCfAu0OdMRK-v4NqOnGCaIl54TbBk.jpg?width=640&crop=smart&auto=webp&s=2dbd565c9f2aa9dc6c57ef69ed2149c86397f843"></p> 
+					</li>
+					<li>To change the size of the image you must add a qualifier to the tag before you close it. So you type [alt="Image" height="200" width="200"]	and play with the numbers to get the right size. 
+					<p><img src="imgsizetag.jpg"></p><p><img src="https://external-preview.redd.it/HJq2wNmMn8_6JcjCfAu0OdMRK-v4NqOnGCaIl54TbBk.jpg?width=640&crop=smart&auto=webp&s=2dbd565c9f2aa9dc6c57ef69ed2149c86397f843" alt="Image" height="200" width="200">	
+					</p>			
+					</li>
+					<li>also you have the option of encoding an image saved on your computer. Save the image in the same location that the code editor page is saved and then link it instead of an online link. 
+					<p><img src="jazzitariustag.jpg"></p>
+					<p><img src="Jazzitarius.jpg" alt="Image" height="200" width="100"></p>					
+					</li>
+				</ul> 
+			<li>to insert a <strong>link</strong>, you use an anchor tag which is just <strong>"a"</strong> then tab. this is <em>not</em> a self closing tag! The reason it needs a closing tag is that you are typing text in between the open and close portions, this is text that will be visible, it is what the link is "anchored" to, aka, the text that the user will click on to activate the link you have anchored.
+			<ul>
+				<li>the open anchor will say: a ref="http://www.something.com"</li>
+				<li>the space between the open and close anchor will say something like: "Click Here"</li>
+				<li>then there will be the closing tag</li>
+				<li><a href="http://developer.mozilla.org">Click Here for MDN</a></li>
+			</ul>
+			</li>
+			<li>To make a <strong>table</strong>, you use a "table" tag which you have the option of attributing with a border by qualifying the table with an attribute before closing the tag. So you can say: table border="1"
+				<ul>
+					<li>You then define the table with a head element and body element, each of which will will set up with a thead or tbody tag and then the content is typed with a table row tag (tr) but when the content is typed, it differs in that the head must have each cell tagged with a (th) tag while the body has them tagged with a (td) tag. i believe this stands for table heading and table details but each item listed/tagged will appear in a cell to the right of the previous, so it lays out like rows rather than columns.
+					</li>
+					<li>table border=1						
+					</li>
+					<li>table head (thead)						
+					</li>
+					<ul>
+						<li>table row (tr)</li>
+						<li>table details for heading (th)</li>
+					</ul>
+					<li>table body (tbody)						
+					</li>
+					<ul>
+						<li>table row (tr)</li>
+						<li>table details for body (td)</li>
+					</ul>
+					<li><table border=1>
+						<thead>Table of Likes
+							<tr>
+								<th>Person									
+								</th>
+								<th>Sport								
+								</th>
+								<th>Color									
+								</th>								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src=https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/p720x720/74883011_2427892413930455_491027839831769088_o.jpg?_nc_cat=104&_nc_ohc=KF8GMuk9H1cAQmP_1oH3u4015wFnr6tzlBy02S3SUGJZOyc1mLRxRS6Hg&_nc_ht=scontent-ort2-2.xx&oh=a78362adc4141ea10fe77192c2d1c8bd&oe=5EA6A2EE alt="image" height="125" width="100">	
+								</td>
+								<td>Football									
+								</td>
+								<td><a href="https://brooklynbased.com/wp-content/uploads/2016/06/Group-Shoot_Jules_E_Ilonka_Erin_Interface_credit-Bethany-Michaela-1024x683.jpg">Plaids/Checkers</a>									
+								</td>								
+							</tr>
+							<tr>
+								<td><img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/54257478_2054945891225111_110987572745863168_n.jpg?_nc_cat=111&_nc_ohc=ryhVkM0kQ9cAQlOy_HIIdUT2xzLEh-0EH3ZvmW4GrUgUBFMjdgMf8KPXw&_nc_ht=scontent-ort2-2.xx&oh=8e5d62e763159e8e3c13fe03a4383cdb&oe=5EA86631" alt="image" height="100" width="75">									
+								</td>
+								<td><a href="https://cdn.vox-cdn.com/thumbor/TRSERMqDQnyHXWc0-TwcFjoefI4=/0x0:683x1024/920x613/filters:focal(388x210:496x318):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63145305/Diamond_DeShields_png.0.jpeg">Basketball</a>									
+								</td>
+								<td>Blue									
+								</td>								
+							</tr>
+							<tr>
+								<td><img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/13450088_1014867958566248_8462403632100991716_n.jpg?_nc_cat=106&_nc_ohc=QYdwuRiE74AAQmNi-s8yNOPxCZcICXUMr5fCXvKdottme_1-OWLjXgapw&_nc_ht=scontent-ort2-2.xx&oh=ea7441eb97dca0d6cdd2b6910d829873&oe=5E678690" alt="image" height="100" width="100">									
+								</td>
+								<td><a href="https://www.artmuseumgr.org/wp-content/uploads/formidable/6/Serena_960-3.jpg">Tennis</a>
+								</td>
+								<td>Green									
+								</td>								
+							</tr>							
+						</tbody>	
+					</table>						
+					</li> 					
+				</ul>
+			</li>
+	</ol>
+	<h3>Form tags</h3>
+		<ol>
+			<li>a form tag has two key elements: 1) An Action = Where the form sends data to. 2) A Method = Will the data be sent to "GET" From or "POST" To. </li>
+			<li>so you type a form tag and insert the action and method before closing the opening tag. If no action is specified, the submitted form will just refresh and if no method is specified, it will default to "GET". But a specified action can link to a URL and a specified method can Post to said URL</li>
+			<li>then after closing the opening tag you can type in your input tags and then type the form closing tag </li>
+			<li>input tags are already coded for their action in html but if you add a placeholder function within the action tag, it will allow you to display text on the server side</li>
+			<li>for the action=text tag, if you add a placeholder it will put the words you type in your placeholder inside the button of the text box. When the user starts typing, that text disappears</li>
+			<ul>
+				<li>input=text</li>
+				<li>input=password</li>
+				<li>input=color</li>
+				<li>input=button</li>
+				<li>input=submit</li>
+			</ul>
+			<li><img src="formscode.jpg"></li>
+			<li><form action="http://udemy.com" method="GET">
+				<input type="text" placeholder="username">
+				<input type="password" placeholder="password">
+				<input type="color">
+				<input type="button">
+				<input type="submit">
+			</form></li>
+		</ol>
+	<h3>Labels</h3>
+		<ol>
+			<li>Labels are helpful for instances like when someone is reading impaired. The label is associated with the form within the software and allows for it to be called out as such. This is also visually appealing.	
+			</li>
+			<li>The label has two syntax forms. Using this example:<p><label>Username: <input type="text" placeholder="Username"></label></p>
+				<ul>
+					<li>Directly entering the label just before entering the input tag and closing out the label tag after entering the input tag.</li>
+					<p><img src="LabelsSyntax1.jpg" alt="Image" height="20" width="500"></p>
+					<li>entering the label tag separately but connecting it with"for" and "ID" designations</li>
+					<p><img src="LabelsSyntax2.jpg" alt="Image" height="25" width="800"></p>
+				</ul>
+			</li>
+		</ol>
+	<h3>NOTES</h3>
+	<ol>
+		<li>To write <strong>comments</strong> you simply type ctrl and /.
+		</li>
+		<li>Note that anything typed will be visualized very simply unless it has a tag to direct it otherwise
+		</li>
+		<li> Great source of info is the Mozilla Developer Network <a href="http://developer.mozilla.org">MDN</a>			
+		</li>	
+	</ol>
+	
+	
+</body>
 </html>
